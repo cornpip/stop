@@ -17,12 +17,14 @@ readFile('../police/latitudecsv.csv', 'utf-8', function(err,data){
         }
         return x
     })
-    // console.log(data)
 
-    // data = data.join('\n')
-    // writeFile('test.csv', "\uFEFF"+data, (err)=>{
-    //     console.log(err)
-    // })
+    // console.log([data[1305],data[1306]].join('\n'))
+    data = data.join('\n')
+    // 여기서 부터? 1306~1371 까지 누락있다.
+    // 1306~1371 행이 1306에 다 들어감
+    writeFile('test.csv', "\uFEFF"+data, (err)=>{
+        console.log(err)
+    })
 })
 
 // const test_data = [
