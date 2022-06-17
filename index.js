@@ -17,6 +17,8 @@ const script = async() => {
 
     py.stdout.on('data', (data) => {
         console.log(`stdout: ${data}`);
+        // data처리
+        // buffer => toString [1, 2, 3] string => slice 1,2,3 => split [1, 2, 3] array => 요소 map float로 변경
         data = data.toString().slice(1, -1).split(",")
         if (data[0] == 1) {
             console.log('catch')

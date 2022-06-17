@@ -1,6 +1,7 @@
 import { readFile } from 'fs/promises';
 import { readFileSync } from 'fs';
 
+// input = [위도, 경도]
 const near_police = async (path,input)=>{
     var data = readFileSync(path,'utf-8')
     data = data.split(/\r?\n/);
