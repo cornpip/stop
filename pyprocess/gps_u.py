@@ -12,6 +12,6 @@ def get_locate():
             sys.stdout.flush() # 없어야 맞는데 안전용 print비우기
             print([1, lat, long], end="")
             sys.stdout.flush()
-            time.sleep(0.0001) # 여기도 안전용
+            time.sleep(0.001) # 여기도 안전용
             # send image 버퍼 들어올까봐
             break

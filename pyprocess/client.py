@@ -5,12 +5,13 @@ import socket
 import cv2
 import numpy
 import base64
-import gps_u
+# import gps_u
 
 def print_c(x):
     print(x)
     sys.stdout.flush()
-    time.sleep(0.0001) # 잠깐 간격안주면 버퍼(print)를 비우기(flush)전에 다음 버퍼가 들어오는 듯 하다.
+    time.sleep(0.001) # 잠깐 간격안주면 버퍼(print)를 비우기(flush)전에 다음 버퍼가 들어오는 듯 하다. 
+    # 0.0001 은 안되는 듯
 
 class ClientSocket:
     def __init__(self, ip, port):
@@ -68,7 +69,6 @@ class ClientSocket:
                         inference_res = inference_res.split(' ')[:-1]
                         f_data = inference_res[0].split('-')
                         if (f_data[0] == "conflict" and float(f_data[1]) >= 0.2):
-                            print_c("------Dangerous------")
                             print_c([1, 35.1388034, 129.105874])
                             # gps_u.get_locate()
                     if cnt % 50 == 0:
