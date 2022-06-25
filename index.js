@@ -1,7 +1,12 @@
-import { near_police } from "./controller/shortcut.js"
+import { near_police } from "./track/shortcut.js"
+import { req_sms } from "./sms/send.js"
 import path from "path"
 import { fileURLToPath } from 'url';
 import { spawn } from 'child_process'
+import dotenv from 'dotenv'
+dotenv.config()
+// dotenv는 최종 process 실행 파일에서만 필요함
+// 거기 설정 기준으로 process.env 값들이 설정된다.
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -26,9 +31,14 @@ const script = async() => {
             data = data.map(function (x, i) {
                 return i == 0 ? x : parseFloat(x)
             })
-            data = data.slice(1)
+            data = data.slice(1);
             var result = near_police(csv, data);
-            result.then(r => console.log(r))
+
+            // result promise다
+            result.then(r => {
+                console.log(r,'\n');
+                req_sms(r);
+            })
         }
     });
 
