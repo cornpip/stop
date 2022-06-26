@@ -36,8 +36,10 @@ const script = async() => {
 
             // result promise다
             result.then(r => {
-                console.log(r,'\n');
-                req_sms(r);
+                // r[0]=도로명, r[1]=지번, data[0]=위도, data[1]=경도
+                var msg = `가까운 파출소: ${r[0]}, 문제위치: 위도(${data[0]}), 경도(${data[1]})`
+                console.log(msg,'\n');
+                req_sms(msg);
             })
         }
     });
