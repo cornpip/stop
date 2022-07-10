@@ -11,4 +11,5 @@
 
 ## Links
 #### [대한임베디드공학회 ict대학생 논문경진대회 제출 논문](https://drive.google.com/file/d/1vd5vM4-wfGYxobYWNlYLCwKDV_Oa8xU-/view?usp=sharing)  
-#### [캡스톤디자인 경진대회 참여 포스터](https://docs.google.com/presentation/d/1bpxRl3pi8Qdm9mtQOApYPJharchJ7V_Y/edit?usp=sharing&ouid=109716382236660184193&rtpof=true&sd=true) _(A1 사이즈 ppt라 로딩시간이 있습니다.)_
+#### [캡스톤디자인 경진대회 참여 포스터](https://docs.google.com/presentation/d/1bpxRl3pi8Qdm9mtQOApYPJharchJ7V_Y/edit?usp=sharing&ouid=109716382236660184193&rtpof=true&sd=true)  
+_(로딩이 있을 수 있습니다.)_
