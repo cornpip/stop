@@ -1,4 +1,4 @@
-## 운전자 폭행 감지 및 위치기반 신고 시스템  
+# 운전자 폭행 감지 및 위치기반 신고 시스템  
 #### dataset준비, 모델학습, 추론 서버 관련 repo입니다 => [__mmaction2__](https://github.com/cornpip/mmaction2)
 
 ![구성](https://user-images.githubusercontent.com/74674780/178137022-1b64682c-4ed6-48d6-9c39-05b08b2503c0.PNG)
@@ -9,6 +9,6 @@
 
 현재는 반환받은 가까운 경찰서와 폭행 상황이 발생한 위치를 활용하는 한 예시로 [__SMS전송__](https://github.com/cornpip/stop/blob/main/sms/send.js) 을 활용합니다. 네이버의 Simple & Easy Notification Service를 이용합니다. 사용 가이드에 따라 Signature를 생성하고 api를 호출합니다.    
 
-### +)
-[대한임베디드공학회 ict대학생 논문경진대회 제출 논문](https://drive.google.com/file/d/1vd5vM4-wfGYxobYWNlYLCwKDV_Oa8xU-/view?usp=sharing)  
-[캡스톤디자인 경진대회 참여 포스터](https://docs.google.com/presentation/d/1bpxRl3pi8Qdm9mtQOApYPJharchJ7V_Y/edit?usp=sharing&ouid=109716382236660184193&rtpof=true&sd=true) _(A1 사이즈 ppt라 로딩시간이 있습니다.)_
+## Links
+#### [대한임베디드공학회 ict대학생 논문경진대회 제출 논문](https://drive.google.com/file/d/1vd5vM4-wfGYxobYWNlYLCwKDV_Oa8xU-/view?usp=sharing)  
+#### [캡스톤디자인 경진대회 참여 포스터](https://docs.google.com/presentation/d/1bpxRl3pi8Qdm9mtQOApYPJharchJ7V_Y/edit?usp=sharing&ouid=109716382236660184193&rtpof=true&sd=true) _(A1 사이즈 ppt라 로딩시간이 있습니다.)_
